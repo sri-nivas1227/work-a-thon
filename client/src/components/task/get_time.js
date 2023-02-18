@@ -19,6 +19,6 @@ export const notify = (time) => {
   let check_time = parseInt(time[1], 10) % 2;
   // console.log(`${check_time}, ${parseInt(time[2], 10)}`);
   if (check_time === 0 && parseInt(time[2], 10) === 0) {
-    console.log("take a break");
+    return "Take a break";
   }
 };

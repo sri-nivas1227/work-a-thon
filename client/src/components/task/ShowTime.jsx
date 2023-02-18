@@ -8,6 +8,7 @@ import './ShowTime.css'
     const [startTime, setStartTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false)
     const [isDisabled, setIsDisabled] = useState(false)
+    const [message, setMessage] = useState(null)
     useEffect(() => {
       let interval;
       if(isRunning)
@@ -15,7 +16,7 @@ import './ShowTime.css'
 
         interval = setInterval(() => {
         setTime(getTime(startTime));
-        notify(time)
+        setMessage(notify(time))
 
         }, 1000);
       }
@@ -46,6 +47,13 @@ import './ShowTime.css'
         </button>
      
       <p className='timer'>Timer: {hours}:{minutes}:{seconds}</p>
+      {message!==null 
+      ?(
+        <p>{message}</p>
+      )
+      :
+      (<p></p>)
+      }
     </div>
   );
 }
