@@ -4,7 +4,9 @@ header {
     flex-direction: column;
   }
   body {
-    background-color: #ede9df;
+    /* background-color: #ede9df; */
+  /* background-color: #948c76; */
+  /* background-color: #e0d8c6;s */
     font-family: "Courier New", Courier, monospace;
   }
   
@@ -137,4 +139,8 @@ header {
 }
 .pb-3{
     padding-bottom: 3rem;
+}
+
+.taskDesc{
+    width: 50vh;
 }

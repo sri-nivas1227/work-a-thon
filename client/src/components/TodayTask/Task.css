@@ -13,15 +13,15 @@ input[type="checkbox"] {
     /* display: none; */
 }
 
-label {
+.taskLink label {
     cursor: pointer;
     padding-right: 30px;
     position: relative;
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-label:before {
+.taskLink label:before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -32,7 +32,7 @@ label:before {
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked+label:before {
+input[type="checkbox"]:checked+ .taskLink label:before {
     content: "✔";
     display: flex;
     align-items: center;
@@ -44,17 +44,17 @@ input[type="checkbox"]:checked+label:before {
     font-size: 16px;
 }
 
-input[type="checkbox"]:checked+label:after {
+input[type="checkbox"]:checked+ .taskLink label:after {
     content: "";
     display: block;
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: 0;
     width: 95%;
     height: 1px;
     background-color: #5b5841;
 }
-.description{
+/* .description{
     font-size:0.875rem;
     margin-left: 1rem;
 }
@@ -64,4 +64,4 @@ input[type="checkbox"]:checked+label:after {
 }
 .task-div:hover{
     background-color: rgba(223, 29, 29, 0.391);
-}
+} */

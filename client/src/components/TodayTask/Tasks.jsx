@@ -10,11 +10,26 @@ const Tasks = ({ tasks }) => {
       <ul>
         {tasks.map((item) => (
           <>
-            <div className="task">
+            <div className="task" >
               <input type="checkbox" id={item.id} />
-              <Link to={`/${item.id}`} className="text-decoration-none">
+              <Link to={`/${item.id}`} className="taskLink">
 
-                <div className="task-div">
+               
+
+               <label>{item.task}</label> 
+
+              </Link>
+              {/* <input type="checkbox" id={item.id} />*/}
+            </div>
+          </>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default Tasks;
+ {/* <div className="task-div">
 
                   <label
                     onMouseEnter={() => setSelectedItem(item.id)}
@@ -25,18 +40,4 @@ const Tasks = ({ tasks }) => {
                   {selectedItem === item.id && (
                     <div className="description">{item.description}</div>
                   )}
-                </div>
-
-
-              </Link>
-              {/* <input type="checkbox" id={item.id} />
-                <label  >{item.task}</label> */}
-            </div>
-          </>
-        ))}
-      </ul>
-    </>
-  );
-};
-
-export default Tasks;
+                </div> */}

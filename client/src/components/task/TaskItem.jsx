@@ -7,14 +7,17 @@ import { Users } from '../../dummytask'
 
 const TaskItem = () => {
   const { id } = useParams();
+  // console.log(id);
   const [taskArray, setTasksArray] = useState([...Users]);
   const currentTask = taskArray.find((task) => {
     return task.id === Number(id)
   })
+  console.log(currentTask)
+
 
   return (
     <>
-      <div className='bg-white'>
+      <div className=''>
       <header>
       <nav className="main-nav">
         <a  className="logo">
@@ -26,8 +29,9 @@ const TaskItem = () => {
         <div className='mx-5'>
           <div className='taskDetails px-5 pb-3'>
             <div className="flex items-center ">
-              <div>
-                <p className='text-xl py-2 font-bold '>{currentTask.description}</p>
+              <div className='taskDesc'>
+                <p className='text-xl font-bold'> <u>Task</u> :  { currentTask.task}</p>
+                <p className='text-m py-3 '>{currentTask.description}</p>
                 <p className={
                   clsx({ "bg-green": currentTask.isCompleted },
                     { "bg-red": !currentTask.isCompleted },
