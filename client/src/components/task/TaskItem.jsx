@@ -2,32 +2,11 @@ import React, { useState } from 'react'
 import './TaskItem.css'
 import { useParams } from 'react-router-dom'
 import clsx from 'clsx'
+import {User} from "../../dummytask"
 
-const Tasks = [
-  {
-    userTaskTitle: "Task Intiated Desgin file ready",
-    description: "Description 1",
-    isCompleted: true, id: 0
-  },
-  {
-    userTaskTitle: "Developement code ready",
-    description: "Description 2",
-    isCompleted: false, id: 1
-  },
-  {
-    userTaskTitle: "Code deployed",
-    description: "Description 3",
-    isCompleted: false, id: 2
-  },
-  {
-    userTaskTitle: "Client required modification done",
-    description: "Description 4",
-    isCompleted: false, id: 3
-  },
-]
 const TaskItem = () => {
   const { id } = useParams();
-  const [taskArray, setTasksArray] = useState([...Tasks]);
+  const [taskArray, setTasksArray] = useState([...User]);
   const currentTask = taskArray.find((task) => {
     return task.id === Number(id)
   })
@@ -42,7 +21,7 @@ const TaskItem = () => {
         </a>
       </nav>
     </header>
-        <h3 className='bg-lightBrown mx-5 px-5 text-2xl py-1 mt-2'>{currentTask.userTaskTitle}</h3>
+        <h3 className='bg-lightBrown mx-5 px-5 text-2xl py-1 mt-2'>{}</h3>
         <div className='mx-5'>
           <div className='taskDetails px-5 pb-3'>
             <div className="flex items-center ">
