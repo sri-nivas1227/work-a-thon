@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const twilio = require("twilio");
-const twil_id = "ACd7c445c074b04cc905fa653be2148003";
-const twil_token = "682f89d407ff145b69e84588de143d9b";
+const twil_id = '<YOUR_TWILIO_SSID>'
+const twil_token = "<YOUR_TWILIO_AUTH_TOKEN>";
 const twil_number = "+16094540472";
 const client = twilio(twil_id, twil_token);
 
