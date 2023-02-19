@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.container{
+    background-color: rgb(214, 47, 47);
+    color:white;
+    padding-inline:1.25rem;
+    font-size: 1.25rem;
+    margin-block: 3rem;
+}
+.text-2xl{
+    font-size: 1.5rem;
+}
+.list-style{
+    list-style-type: none;
+}
+.justify-content{
+    justify-content: center;
+}
