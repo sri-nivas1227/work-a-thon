@@ -12,7 +12,7 @@ const App = () => {
     <Header />
     <Routes>
       <Route path="/" >
-        <Route index element={<Home></Home>} />
+        <Route index element={<Home />} />
         <Route path="user" element={<User />} />
         <Route path=":id" element={<TaskItem/>}/>
       </Route>
