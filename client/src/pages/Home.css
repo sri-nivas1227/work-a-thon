@@ -1,9 +1,3 @@
-header {
-  display: flex;
-  background-color: #948c76;
-  /* gap: 50px; */
-  /* flex-direction: column; */
-}
 body {
   background-color: #ede9df;
   font-family: "Courier New", Courier, monospace;
