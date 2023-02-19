@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home'
 import User from './pages/user/User'
 import Header from './components/Header'
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
     <Header />
     <Routes>
       <Route path="/" >
-        <Route index element={<></>} />
+        <Route index element={<Home></Home>} />
         <Route path="user" element={<User />} />
       </Route>
     </Routes>
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

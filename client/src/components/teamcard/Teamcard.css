@@ -1,0 +1,62 @@
+.member-cards{
+    display: flex;
+    /* width: 100%; */
+    overflow: scroll;
+    /* background-color: aqua; */
+    padding: 10px;
+
+}
+.card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin-right: 50px;
+    /* height: 20%; */
+    cursor: pointer;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: .2s  all;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px 2px rgba(132, 127, 108, 0.696);
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: .2s ease-in-out;
+}
+.profile-pic:hover {
+    animation: rotate 0.3s ease-in-out forwards;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.member-name {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.member-position {
+    font-size: 1em;
+    font-weight: 600;
+    color: #999;
+}
