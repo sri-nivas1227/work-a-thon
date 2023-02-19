@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import './TaskItem.css'
 import { useParams } from 'react-router-dom'
 import clsx from 'clsx'
-import {User} from "../../dummytask"
+// import { User } from "../../dummytask"
+import { Users } from '../../dummytask'
 
 const TaskItem = () => {
   const { id } = useParams();
-  const [taskArray, setTasksArray] = useState([...User]);
+  const [taskArray, setTasksArray] = useState([...Users]);
   const currentTask = taskArray.find((task) => {
     return task.id === Number(id)
   })
