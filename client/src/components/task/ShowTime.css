@@ -1,0 +1,34 @@
+.task-tracker{
+    border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #d9a254;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+
+}
+.button{
+    background-color: #683e04;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.button:disabled{
+    background-color: #ccc;
+  color: #666;
+  cursor: default;
+}
+.timer{
+    background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 16px;
+  color: #666;
+}
