@@ -18,7 +18,7 @@ export const notify = (time) => {
   // console.log("I've been summonned");
   let check_time = parseInt(time[1], 10) % 2;
   // console.log(`${check_time}, ${parseInt(time[2], 10)}`);
-  if (check_time === 0 && parseInt(time[2], 10) === 0) {
+  if (check_time === 0 && parseInt(time[2], 10) < 5) {
     return "Take a break";
   }
 };
