@@ -2,15 +2,11 @@ import logo from "../logo.svg";
 
 const Header = () => {
   return (
-    <header className="h-16 px-4 flex justify-between items-center text-white ">
-      <div className="flex justify-between items-center">
-        {" "}
-        <a href="/" className="logo">
-          {/* <img src={logo} style={{ width: "35px" }} alt="logo" /> */}
+    <header className="header h-16 px-4 flex justify-between items-center text-white ">
+      <a href="/" className="logo">
+          officeLaunge
         </a>
-        <a className="logo">officeLaunge</a>
-      </div>
-      <div className="nav text-base" style={{fontSize:"1.2rem", fontWeight:"bolder"}}>
+      <div className="nav text-base" style={{ fontSize: "1.2rem", fontWeight: "bolder" }}>
         <a href="task" className="nav-item">
           Task
         </a>
