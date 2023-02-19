@@ -1,3 +1,5 @@
+import './User.css';
+
 function User() {
 
     let taskCount = 70;
@@ -12,8 +14,9 @@ function User() {
                 <p className="text-3xl mb-12">
                     Progress percentage
                 </p>
-                <div className="relative progress-bar bg-blue-200 w-96 h-12 rounded-md shadow-2xl border-blue-800 border-2 ">
-                    <p className="text-xl z-10 absolute top-2.5 right-40 text-white	">
+                {/* <div className="relative bg-blue-200 w-96 h-12 rounded-md shadow-2xl border-blue-800 border-2"> */}
+                <div className="relative progress-bar stripes">
+                    <p className="text-xl z-10 absolute top-2.5 right-44 text-white	">
                         {progress + ' %'}
                     </p>
                     <div className="percent bg-blue-600 h-full rounded-md" style={{width: progress + '%'}}>
