@@ -6,7 +6,9 @@
     margin: 10px;
     position: relative;
 }
-
+.text-decoration-none{
+    text-decoration:none;
+}
 input[type="checkbox"] {
     /* display: none; */
 }
@@ -15,6 +17,8 @@ label {
     cursor: pointer;
     padding-right: 30px;
     position: relative;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 label:before {
@@ -49,4 +53,15 @@ input[type="checkbox"]:checked+label:after {
     width: 95%;
     height: 1px;
     background-color: #5b5841;
+}
+.description{
+    font-size:0.875rem;
+    margin-left: 1rem;
+}
+.task-div{
+    border:1px solid rgb(174, 108, 108);
+    padding:1rem;
+}
+.task-div:hover{
+    background-color: rgba(223, 29, 29, 0.391);
 }
