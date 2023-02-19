@@ -40,7 +40,7 @@ function User() {
                     Tasks Pending
                 </p>
                 <p className="my-12 text-xl text-center">
-                    {taskPending}%
+                    {taskPending}
                 </p>
             </div>
             <div className="content-right flex align-top">
