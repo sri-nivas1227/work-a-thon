@@ -1,0 +1,174 @@
+header {
+  display: flex;
+  /* gap: 50px; */
+  flex-direction: column;
+}
+body {
+  background-color: #ede9df;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #948c76;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #d6d0c1;
+  flex-direction: column;
+  height: fit-content;
+  overflow: hidden;
+  width: 60%;
+  margin: 25px auto 0px auto;
+  padding: 0 0px 20px 0px;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: space-between;
+
+  flex: 1;
+  font-size: 2em;
+  height: fit-content;
+  background-color: #bdb5a2;
+  /* height: 60px; */
+}
+
+.user-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.user-nav li {
+  margin: 0 10px;
+}
+
+.user-nav a {
+  color: #333;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.user-nav img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+.task-list {
+  /* background-color: #f5f5f5; */
+  padding: 10px 0px 0px 20px;
+  margin-top: 10px;
+}
+
+.task-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  background-color: #fff;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  color: #333;
+  font-size: .9em;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.tab.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.task-content {
+  /* background-color: #fff; */
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+.team-members {
+  padding: 10px 0px 0px 20px;
+  display: flex;
+  /* background-color: aliceblue; */
+  margin-top: 10px;
+  /* overflow: scroll; */
+  flex-direction: column;
+}
+
+.team-members span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* position: relative; */
+}
+
+/* team card */
+.team {
+  padding: 10px 0px 0px 20px;
+  font-size: 1.5rem;
+  /* padding: 10px 2px 10px 0px; */
+}
+.team span {
+  font-weight: 600;
+}
+.team-card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  margin-right: 50px;
+  /* height: 20%; */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: .2s all;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.team-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px 2px rgba(132, 127, 108, 0.696);
+}
+
+.team-profile-pic {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #999;
+}

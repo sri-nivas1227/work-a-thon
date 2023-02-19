@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch-title {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.elapsed-time {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.start-button,
+.stop-button,
+.reset-button {
+    background-color: #4287f5;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.start-button:hover,
+.stop-button:hover,
+.reset-button:hover {
+    background-color: #366ab7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stop-button {
+    background-color: #e84c3d;
+}
+
+.reset-button {
+    background-color: #9b9b9b;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0;
+}
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stopwatch-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.elapsed-time {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.start-button,
+.stop-button,
+.reset-button {
+    background-color: #4287f5;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-button:hover,
+.stop-button:hover,
+.reset-button:hover {
+    background-color: #366ab7;
+}
+
+.stop-button {
+    background-color: #e84c3d;
+}
+
+.reset-button {
+    background-color: #9b9b9b;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0;
 }
