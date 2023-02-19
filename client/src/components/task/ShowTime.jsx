@@ -7,7 +7,9 @@ import './ShowTime.css'
     const [time, setTime] = useState(['00','00','00']);
     const [startTime, setStartTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false)
-    const [isDisabled, setIsDisabled] = useState(false)
+    const [checkInDisabled, setCheckInDisabled] = useState(false)
+    const [checkOutDisabled, setCheckOutDisabled] = useState(false)
+
     const [message, setMessage] = useState(null)
     useEffect(() => {
       let interval;
@@ -30,19 +32,20 @@ import './ShowTime.css'
     function handleStart() {
       setIsRunning(true);
       setStartTime(new Date());
+      setCheckInDisabled(true);
     }
   
     function handleStop() {
       setIsRunning(false);
-      setIsDisabled(true);
+      setCheckOutDisabled(true);
     }
     const [hours, minutes, seconds] = [time[0],time[1],time[2]]
     return (
     <div className='task-tracker'>
-        <button className="button start-button" disabled={isDisabled} onClick={handleStart}>
+        <button className="button start-button" disabled={checkInDisabled} onClick={handleStart}>
           Check In
         </button>
-        <button className="button stop-button" disabled={isDisabled} onClick={handleStop}>
+        <button className="button stop-button" disabled={checkOutDisabled} onClick={handleStop}>
           Checkout
         </button>
      
