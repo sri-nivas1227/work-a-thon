@@ -27,13 +27,13 @@ function User() {
                     Tasks Accomplished
                 </p>
                 <p className="my-12 text-xl text-center">
-                    {taskCompleted}
+                    {taskCompleted}%
                 </p>
                 <p className="text-3xl mt-16 mb-8">
                     Tasks Pending
                 </p>
                 <p className="my-12 text-xl text-center">
-                    {taskPending}
+                    {taskPending}%
                 </p>
             </div>
             <div className="content-right flex align-top">
@@ -51,7 +51,7 @@ function User() {
                     <p className="summary mt-8">Software Engineer and a tech enthusiast</p>
 
                 </div>
-                <div className="ml-28 user-img rounded-lg shadow-xl shadow-blue-800 h-40 w-40 border-2 border-blue-800 ">
+                <div className="ml-28 user-img rounded-lg shadow-xl shadow-gray-500 h-40 w-40 border-2 border-gray-300 ">
                     <img
                         src="https://images.unsplash.com/photo-1522508042487-6e6684f78c5b"
                         alt="pic"
