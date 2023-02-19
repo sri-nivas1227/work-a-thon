@@ -1,7 +1,7 @@
 function User() {
 
     let taskCount = 70;
-    let taskCompleted = 50;
+    let taskCompleted = 35;
     let taskPending = taskCount - taskCompleted;
     let progress = (taskCompleted*100.0/taskCount).toFixed(2);
 
@@ -16,7 +16,7 @@ function User() {
                     <p className="text-xl z-10 absolute top-2.5 right-40 text-white	">
                         {progress + ' %'}
                     </p>
-                    <div className="percent bg-green-400 h-full rounded-md" style={{width: progress + '%'}}>
+                    <div className="percent bg-blue-600 h-full rounded-md" style={{width: progress + '%'}}>
 
                     </div>
                 </div>
